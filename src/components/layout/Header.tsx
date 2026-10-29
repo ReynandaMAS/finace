@@ -7,7 +7,6 @@ import {
   UserCheck,
   LogOut,
   ChevronDown,
-  RotateCcw,
   Sparkles,
   Building,
   Menu,
@@ -27,7 +26,6 @@ export const Header: React.FC<HeaderProps> = ({ onOpenNewTransaction, onOpenMobi
     toggleHideBalances,
     quickSwitchUser,
     logout,
-    resetAllData,
     activeTab,
     setActiveTab,
     hasPermission,
@@ -262,19 +260,6 @@ export const Header: React.FC<HeaderProps> = ({ onOpenNewTransaction, onOpenMobi
                 >
                   <UserCheck className="w-4 h-4 text-emerald-400" />
                   <span>Kelola Akses Semua Pengguna</span>
-                </button>
-
-                <button
-                  onClick={() => {
-                    if (window.confirm('Kembalikan semua data keuangan ke default demo?')) {
-                      resetAllData();
-                      setUserDropdownOpen(false);
-                    }
-                  }}
-                  className="w-full flex items-center gap-2 px-3 py-2 text-xs text-slate-400 hover:text-amber-300 hover:bg-slate-800 rounded-lg transition-colors"
-                >
-                  <RotateCcw className="w-4 h-4" />
-                  <span>Reset Data Demo</span>
                 </button>
 
                 <button
