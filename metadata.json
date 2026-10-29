@@ -1,0 +1,6 @@
+{
+  "name": "FinanKu Harian - Catatan Keuangan Sehari-hari & Keluarga",
+  "description": "Aplikasi catatan keuangan sehari-hari, belanja dapur, jajan, tagihan, dan tabungan keluarga modern dengan akses multi-user dan laporan pengeluaran real-time.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
